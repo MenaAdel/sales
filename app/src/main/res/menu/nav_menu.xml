@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/sales_screen"
+        android:icon="@drawable/mail_icn"
+        android:title="@string/sales_screen"
+        >
+    </item>
+
+    <item android:id="@+id/daily_sales_report"
+        android:icon="@drawable/password_icn"
+        android:title="@string/daily_sales_report"
+        >
+    </item>
+
+    <item android:id="@+id/logout"
+        android:icon="@drawable/ic_menu_logout"
+        android:title="@string/logout"
+        >
+    </item>
+
+</menu>
