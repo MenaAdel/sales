@@ -77,11 +77,12 @@ public class SalesActivity extends AppCompatActivity implements NavigationView.O
             default:
                 fragment = new SalesScreenFragment();break;
         }
-
-            FragmentManager fragmentManager= getSupportFragmentManager();
+        if (fragment != null) {
+            FragmentManager fragmentManager = getSupportFragmentManager();
             FragmentTransaction ft = fragmentManager.beginTransaction();
-            ft.replace(R.id.screen_area,fragment);
+            ft.replace(R.id.screen_area, fragment);
             ft.commit();
+        }
 
         mDrawer.closeDrawer(GravityCompat.START);
 
